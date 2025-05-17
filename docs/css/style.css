@@ -135,3 +135,19 @@ footer {
   color: #888;
 }
 
+.nav-link {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+
