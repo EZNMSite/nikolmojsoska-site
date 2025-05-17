@@ -69,6 +69,33 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 2rem;
+  .nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+  background-color: #ddd;
+}
+
   font-size: 0.9rem;
   color: #888;
   background-color: #fff;
