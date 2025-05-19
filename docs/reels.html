@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reels - Nikol Mojsoska</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .reel {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .reel:hover {
+      transform: scale(1.02);
+    }
+
+    .reel video {
+      width: 100%;
+      display: block;
+    }
+
+    .caption {
+      padding: 10px;
+      text-align: center;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎥 Nikol's Reels</h1>
+
+    <div class="grid">
+
+      <div class="reel">
+        <video controls poster="thumbnail1.jpg">
+          <source src="reel1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="caption">Reel Title or Description 1</div>
+      </div>
+
+      <div class="reel">
+        <video controls poster="thumbnail2.jpg">
+          <source src="reel2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="caption">Reel Title or Description 2</div>
+      </div>
+
+      <!-- Add more reels here -->
+
+    </div>
+  </div>
+</body>
+</html>
